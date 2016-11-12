@@ -41,6 +41,7 @@ angular.module('starter.controllers', [])
   };
 })
 
+
 .controller('PlaylistsCtrl', function($scope) {
   $scope.playlists = [
     { title: 'Reggae', id: 1 },
@@ -52,5 +53,9 @@ angular.module('starter.controllers', [])
   ];
 })
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
-});
+
+.controller('TicketsCtrl', ['$scope', function($scope, ticket) {
+  tickets.success(function(data) {
+    $scope.tickets = data;
+  });
+}]);
