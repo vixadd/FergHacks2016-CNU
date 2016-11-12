@@ -16,7 +16,7 @@
 
   <body>
     
-    <ion-nav-bar class="bar-positive">
+    <ion-nav-bar class="bar-balanced">
       <ion-nav-back-button>
       </ion-nav-back-button>
     </ion-nav-bar>
@@ -25,19 +25,19 @@
 
 
     <script id="templates/tabs.html" type="text/ng-template">
-      <ion-tabs class="tabs-icon-top tabs-positive">
+      <ion-tabs class="tabs-icon-top tabs-balanced">
 
         <ion-tab title="Home" icon="ion-home" href="#/tab/home">
           <ion-nav-view name="home-tab"></ion-nav-view>
         </ion-tab>
 
-        <ion-tab title="About" icon="ion-ios-information" href="#/tab/about">
-          <ion-nav-view name="about-tab"></ion-nav-view>
+        <ion-tab title="Tickets" icon="ion-wrench" href="#/tab/tickets">
+          <ion-nav-view name="tickets-tab"></ion-nav-view>
         </ion-tab>
 
-        <ion-tab title="Contact" icon="ion-ios-world" ui-sref="tabs.contact">
+        <!-- <ion-tab title="Contact" icon="ion-ios-world" ui-sref="tabs.contact">
           <ion-nav-view name="contact-tab"></ion-nav-view>
-        </ion-tab>
+        </ion-tab> -->
 
       </ion-tabs>
     </script>
@@ -85,9 +85,10 @@
       </ion-view>
     </script>
 
-    <script id="templates/about.html" type="text/ng-template">
-      <ion-view view-title="About">
+    <script id="templates/tickets.html" type="text/ng-template">
+      <ion-view view-title="Tickets">
         <ion-content class="padding">
+          <h1>This is where tickets may go!!!</h1>
           <h3>Create hybrid mobile apps with the web technologies you love.</h3>
           <p>Free and open source, Ionic offers a library of mobile-optimized HTML, CSS and JS components for building highly interactive apps.</p>
           <p>Built with Sass and optimized for AngularJS.</p>
@@ -106,7 +107,7 @@
       </ion-view>
     </script>
 
-    <script id="templates/contact.html" type="text/ng-template">
+    <!-- <script id="templates/contact.html" type="text/ng-template">
       <ion-view title="Contact">
         <ion-content>
           <div class="list">
@@ -119,7 +120,7 @@
           </div>
         </ion-content>
       </ion-view>
-    </script>
+    </script> -->
 
   </body>
 </html>

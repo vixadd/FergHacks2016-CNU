@@ -33,11 +33,11 @@ angular.module('ionicApp', ['ionic'])
         }
       }
     })
-    .state('tabs.about', {
-      url: "/about",
+    .state('tabs.tickets', {
+      url: "/tickets",
       views: {
-        'about-tab': {
-          templateUrl: "templates/about.html"
+        'tickets-tab': {
+          templateUrl: "templates/tickets.html"
         }
       }
     })
@@ -48,15 +48,15 @@ angular.module('ionicApp', ['ionic'])
           templateUrl: "templates/nav-stack.html"
         }
       }
-    })
-    .state('tabs.contact', {
-      url: "/contact",
-      views: {
-        'contact-tab': {
-          templateUrl: "templates/contact.html"
-        }
-      }
     });
+    // .state('tabs.contact', {
+    //   url: "/contact",
+    //   views: {
+    //     'contact-tab': {
+    //       templateUrl: "templates/contact.html"
+    //     }
+    //   }
+    // });
 
 
    $urlRouterProvider.otherwise("/tab/home");
