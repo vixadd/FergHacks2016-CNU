@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('starter.controllers', ['rapunzel.services'])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
 
@@ -44,18 +44,21 @@ angular.module('starter.controllers', [])
 
 .controller('PlaylistsCtrl', function($scope) {
   $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
+    { title: 'Help! My Fosset broke', id: 1 },
+    { title: 'Help! My garden hose is choking me', id: 2 },
+    { title: 'Help! Im butt hurt', id: 3 },
+    { title: ':(', id: 4 },
+    { title: 'AHHHHHHHHHHHH', id: 5 },
+    { title: 'Help! I suck at Angular.JS', id: 6 }
   ];
 })
 
 
-.controller('TicketsCtrl', ['$scope', function($scope, ticket) {
+.controller('TicketsCtrl', ['$scope', function($scope, tickets) {
   tickets.success(function(data) {
     $scope.tickets = data;
-  });
-}]);
+  })
+}])
+
+.controller('PlaylistCtrl', function($scope, $stateParams) {
+});

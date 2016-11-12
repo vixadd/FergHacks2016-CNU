@@ -59,6 +59,26 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
 
+  .state('app.tickets', {
+    url:'/tickets',
+    views: {
+      'menuContent': {
+        templateUrl:'template/tickets.html',
+        controller: 'TicketsCtrl'
+      }
+    }
+  })
+
+  .state('app.singleTicket', {
+    url:'/tickets/:ticketId',
+    views: {
+      'menuContent': {
+        templateUrl:'templates/ticket.html',
+        controller:'TicketCtrl'
+      }
+    }
+  })
+
   .state('app.single', {
     url: '/playlists/:playlistId',
     views: {
@@ -72,21 +92,29 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/password',
       views: {
         'menuContent': {
-          templateUrl: 'templates/password.html',
-          
+          templateUrl: 'templates/password.html'
+        }
+      }
+  })
+
+    .state('app.login', {
+      url:'/login',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/login.html'
         }
       }
     })
+
   .state('app.register', {
       url: '/register',
       views: {
         'menuContent': {
           templateUrl: 'templates/register.html',
-          
         }
       }
     });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/login');
 });
