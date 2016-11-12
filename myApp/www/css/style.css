@@ -6,9 +6,22 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #000000; }
-	.button.button-custom:hover {
+	.button.button-custom:onclick {
 	  color: rgba(255,255,255,.5);
-	  text-decoration: none; }
+	  text-decoration: none;
+	  padding-top: 1px;
+	    }
+	    .button.button-block {
+	    	border-color: transparent;
+	background-color: #33cd5f;
+	color: #000000;
+	    }
+	    .button.button-block:onclick {
+	    		 color: rgba(255,255,255,.5);
+	    		 background-color: #33cd4e; 
+	    		 /*This color is slightly off of our green*/
+	    }
+
 
 /* UNUSED, for reference only */
 .button.button-gold {
