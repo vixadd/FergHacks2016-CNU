@@ -1,8 +1,16 @@
-/* Empty. Add your own CSS if you like */
-.sampleColorCSSclass{
-  background: #5DADE2 !important
+.color-menubar{
+  background: #33cd5f !important
 }
 
+.button.button-custom {
+	border-color: transparent;
+	background-color: transparent;
+	color: #000000; }
+	.button.button-custom:hover {
+	  color: rgba(255,255,255,.5);
+	  text-decoration: none; }
+
+/* UNUSED, for reference only */
 .button.button-gold {
 	border-color: transparent;
 	background-color: #625031;
@@ -18,6 +26,7 @@
 	  box-shadow: none;
 	  color: #625031; }
 	.button.button-gold.button-icon {
+
 	  border-color: transparent;
 	  background: none; }
 	.button.button-gold.button-outline {
