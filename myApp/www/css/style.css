@@ -22,6 +22,15 @@
 	    		 /*This color is slightly off of our green*/
 	    }
 
+.center {
+	align-content: center;
+}
+
+.button.icon-custom.ion-map {
+	font-size: 30px;
+	padding-top: 5px;
+	border-color: transparent;
+}
 
 /* UNUSED, for reference only */
 .button.button-gold {
