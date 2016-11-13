@@ -41,18 +41,6 @@ angular.module('starter.controllers', ['rapunzel.services'])
   };
 })
 
-
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Help! My Fosset broke', id: 1 },
-    { title: 'Help! My garden hose is choking me', id: 2 },
-    { title: 'Help! Im butt hurt', id: 3 },
-    { title: ':(', id: 4 },
-    { title: 'AHHHHHHHHHHHH', id: 5 },
-    { title: 'Help! I suck at Angular.JS', id: 6 }
-  ];
-})
-
   .service('sharedProperties', function () {
     var property = [];
 
@@ -90,15 +78,6 @@ angular.module('starter.controllers', ['rapunzel.services'])
     $scope.formData = {
       dest: ""
     };
-
-    // $scope.$watch('formData', function (formData) {
-    //   if(formData.start != "custom" || formData.custom_start){
-    //     $('#start .custom input').removeClass('error');
-    //   }
-    //   if(formData.dest != "custom" || formData.custom_dest){
-    //     $('#dest .custom input').removeClass('error');
-    //   }
-    // }, true);
 
     $scope.navigate = function () {
       
