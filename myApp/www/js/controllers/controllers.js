@@ -6,6 +6,12 @@ angular.module('starter.controllers', ['rapunzel.services'])
   }
 })
 
+  .controller('homePage', function($state, $scope) {
+    $scope.goTickets = function() {
+      $state.go('app.tickets');
+    }
+  })
+
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
 
   // With the new view caching in Ionic, Controllers are only called
