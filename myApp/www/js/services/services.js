@@ -10,7 +10,11 @@ angular.module('rapunzel.services', [])
         })
 
 
-}])
+    }])
+
+  .factory('Ticket', function($resource) {
+    return $resource('http://localhost:8100/#/app/tickets/:ticketId');
+  })
 
         // Define an Angular service to wrap the plugin
       .service('$cordovaLaunchNavigator', ['$q', function ($q) {

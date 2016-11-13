@@ -53,17 +53,32 @@ angular.module('starter.controllers', ['rapunzel.services'])
   ];
 })
 
+  .service('sharedProperties', function () {
+    var property = [];
 
-  .controller('TicketsCtrl', ['$scope', 'tickets', function($scope, tickets) {
+    return {
+      getProperty: function () {
+        return property;
+      },
+      setProperty: function(value) {
+        property = value;
+      }
+    };
+  })
+
+  .controller('TicketsCtrl', ['$scope', 'tickets', 'sharedProperties', function($scope, tickets, shared) {
     tickets.success(function(data) {
       $scope.tickets = data;
+      shared.setProperty(data);
     });
   }])
 
-  .controller('TicketCtrl', function($scope, $stateParams) {})
-
-  .controller('PlaylistCtrl', function($scope, $stateParams) {})
-
+  .controller('TicketCtrl', ['$scope', 'sharedProperties', '$stateParams', function($scope, shared, $stateParams) {
+    var obj = shared.getProperty();
+    for (var i = 0; i < obj.length; i++) {
+      if (obj[i].id == $stateParams.ticketId) $scope.ticket = obj[i];
+    }
+  }])
 
   .controller('PlaylistCtrl', function($scope, $stateParams) {
 
