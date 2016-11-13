@@ -83,7 +83,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     url:'/:ticket-id',
     views: {
       'menuContent': {
-        templateUrl:'templates/ticket-id.html'
+        templateUrl:'templates/ticket-id.html',
+        controller: 'NavCtrl'
       }
     }
   })

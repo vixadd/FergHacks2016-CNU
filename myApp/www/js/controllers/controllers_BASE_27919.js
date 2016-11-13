@@ -54,61 +54,11 @@ angular.module('starter.controllers', ['rapunzel.services'])
 })
 
 
-.controller('TicketsCtrl', ['$scope', function($scope, tickets) {
+  .controller('TicketsCtrl', ['$scope','tickets', function($scope, tickets) {
   tickets.success(function(data) {
     $scope.tickets = data;
   })
-  }])
+}])
 
-<<<<<<< HEAD
-  .controller('TicketCtrl', function($scope, $stateParams) {})
-
-.controller('PlaylistCtrl', function($scope, $stateParams) {});
-=======
 .controller('PlaylistCtrl', function($scope, $stateParams) {
-})
-
-
-// Define a controller to use the promised service
-  .controller('NavCtrl', function ($scope, $cordovaLaunchNavigator) {
-    $scope.formData = {
-      dest: "Westminster, London, UK"
-    };
-
-    // $scope.$watch('formData', function (formData) {
-    //   if(formData.start != "custom" || formData.custom_start){
-    //     $('#start .custom input').removeClass('error');
-    //   }
-    //   if(formData.dest != "custom" || formData.custom_dest){
-    //     $('#dest .custom input').removeClass('error');
-    //   }
-    // }, true);
-
-    $scope.navigate = function () {
-
-      // Validate
-      if($scope.formData.start == "custom" && !$scope.formData.custom_start){
-        $('#start .custom input').addClass('error');
-        return;
-      }
-
-      if($scope.formData.dest == "custom" && !$scope.formData.custom_dest){
-        $('#dest .custom input').addClass('error');
-        return;
-      }
-
-      var start = $scope.formData.start == "custom" ? $scope.formData.custom_start : $scope.formData.start,
-        dest = $scope.formData.dest == "custom" ? $scope.formData.custom_dest : $scope.formData.dest;
-
-      $cordovaLaunchNavigator.navigate(dest, {
-        start: start,
-        enableDebug: true
-      }).then(function () {
-        alert("Navigator launched");
-      }, function (err) {
-        alert(err);
-      });
-    };
-
-  });
->>>>>>> a2eb3344109918329abb6ce040fbcecf82235133
+});
