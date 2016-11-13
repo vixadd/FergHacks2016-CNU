@@ -65,6 +65,8 @@ h1, h2, h3, h4, h5, h6 {
 .button.icon-custom.ion-map {
 	font-size: 30px;
 	padding-top: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
 	border-color: transparent;
 }
 
