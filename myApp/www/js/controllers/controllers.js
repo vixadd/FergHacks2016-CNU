@@ -80,7 +80,7 @@ angular.module('starter.controllers', ['rapunzel.services'])
     };
 
     $scope.navigate = function () {
-      
+
       if($scope.ticket)
         $scope.formData.dest = $scope.ticket.location;
 
