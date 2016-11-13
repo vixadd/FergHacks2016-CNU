@@ -59,7 +59,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
-  
+
     .state('app.playlists', {
       url: '/playlists',
       views: {
@@ -127,5 +127,5 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/tickets');
+  $urlRouterProvider.otherwise('/app/lo0');
 });
