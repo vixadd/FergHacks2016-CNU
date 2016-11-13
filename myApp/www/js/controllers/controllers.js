@@ -102,7 +102,8 @@ angular.module('starter.controllers', ['rapunzel.services'])
 
     $scope.navigate = function () {
       
-      $scope.formData.dest = $scope.ticket.location;
+      if($scope.ticket)
+        $scope.formData.dest = $scope.ticket.location;
 
       // Validate
       if($scope.formData.start == "custom" && !$scope.formData.custom_start){
