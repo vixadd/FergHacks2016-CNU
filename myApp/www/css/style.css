@@ -62,10 +62,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* used in ticket.html for the navigate button */
-.button.icon-custom.ion-map {
+.button.icon-custom {
 	font-size: 30px;
 	padding-top: 5px;
 	padding-left: 15px;
 	padding-right: 15px;
 	border-color: transparent;
+	background-color: #33cd5f;
 }
