@@ -124,6 +124,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
           templateUrl: 'templates/register.html',
         }
       }
+    })
+
+  .state('app.messenging', {
+      url: '/messenging',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/messenging.html',
+        }
+      }
     });
 
   // if none of the above states are matched, use this as the fallback

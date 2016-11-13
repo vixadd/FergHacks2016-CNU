@@ -1,50 +1,53 @@
-<ion-view view-title="Ticket #"> {{ ticket.id }}
+<ion-view view-title="Ticket">
 	<ion-content>
 	<h4>
 	    <div class="row">
 	    	<div class="col">
 	    		<span class="input-label">Name:</span>
-	    		{{ ticket.id }}
+	    		{{ ticket.fullname }}
 	    	</div>
 	    	<div class="col-10"> </div>
 	    	<div class="col">
 	    		<span class="input-label">Date:</span>
-	    		11/12/2016
+	    		{{ ticket.ticket_issue_date }}
 	    		<!-- {{tickets.ticket.Ticket Issue Date}} -->
 	    	</div>
 	    </div>
-	    <p>
+	    <p><p>
 	    <div class="row">
 		    	<div class="col">
 		    		<span class="input-label">Location:</span> 
-		    		1610 Coliseum Dr, Hampton, VA 23666
+		    		{{ ticket.location }}
 		    	</div>
 
 	    	<div class="col-10"> </div>
 
 		    	<div class="col">
+		    		<!-- <form name="nav-form" id="dest"> -->
+		    		<!-- <value name="formData.dest" value={{ticket.location}}> -->
+		    		<form id="nav-form" ng-controller="NavCtrl">
 		    		<button class="button button-positive button-small center icon-custom ion-map" ng-click=navigate()>
 			    		<h4><font color="white">Navigate</font></h4>
 			    	</button>
 		    	</div>
 	    </div>
-	    <p>
+	    <p><p>
 	    <div class="row">
 	    	<div class="col">
 	    		<span class="input-label">Issue:</span>
-	    		{{ ticket.id }}
+	    		{{ ticket.title }}
 	    	</div>
 	    	<div class="col-10"> </div>
 	    	<div class="col">
 	    		<span class="input-label">Attachments:</span>
-	    		{{ ticket.id }}
+	    		{{  }}
 	    	</div>
 	    </div>
-	    <p>
+	    <p><p>
 	    <div class="row">
 	    	<div class="col">
 	    		<span class="input-label">Issue details:</span>
-	    		{{ ticket.id }}
+	    		{{ ticket.title }}
 	    	</div>
 	    </div>
 

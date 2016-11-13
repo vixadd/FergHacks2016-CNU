@@ -88,7 +88,7 @@ angular.module('starter.controllers', ['rapunzel.services'])
 // Define a controller to use the promised service
   .controller('NavCtrl', function ($scope, $cordovaLaunchNavigator) {
     $scope.formData = {
-      dest: "Westminster, London, UK"
+      dest: ""
     };
 
     // $scope.$watch('formData', function (formData) {
@@ -101,6 +101,8 @@ angular.module('starter.controllers', ['rapunzel.services'])
     // }, true);
 
     $scope.navigate = function () {
+      
+      $scope.formData.dest = $scope.ticket.location;
 
       // Validate
       if($scope.formData.start == "custom" && !$scope.formData.custom_start){
@@ -112,7 +114,6 @@ angular.module('starter.controllers', ['rapunzel.services'])
         $('#dest .custom input').addClass('error');
         return;
       }
-
       var start = $scope.formData.start == "custom" ? $scope.formData.custom_start : $scope.formData.start,
         dest = $scope.formData.dest == "custom" ? $scope.formData.custom_dest : $scope.formData.dest;
 
