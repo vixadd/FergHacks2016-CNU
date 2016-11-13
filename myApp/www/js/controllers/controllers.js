@@ -6,11 +6,16 @@ angular.module('starter.controllers', ['rapunzel.services'])
   }
 })
 
-  .controller('homePage', function($state, $scope) {
+  .controller('homePage', ['$state', '$scope', 'tickets', function($state, $scope, tickets) {
     $scope.goTickets = function() {
       $state.go('app.tickets');
     }
-  })
+
+    tickets.success(function(data) {
+      $scope.num_of_tickets = data.length;
+    })
+
+  }])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
 
