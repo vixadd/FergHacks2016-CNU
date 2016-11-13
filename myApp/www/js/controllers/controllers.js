@@ -54,7 +54,7 @@ angular.module('starter.controllers', ['rapunzel.services'])
 })
 
 
-.controller('TicketsCtrl', ['$scope', function($scope, tickets) {
+  .controller('TicketsCtrl', ['$scope', 'tickets', function($scope, tickets) {
   tickets.success(function(data) {
     $scope.tickets = data;
   })
