@@ -69,31 +69,3 @@ h1, h2, h3, h4, h5, h6 {
 	padding-right: 15px;
 	border-color: transparent;
 }
-
-/* UNUSED, for reference only */
-.button.button-gold {
-	border-color: transparent;
-	background-color: #625031;
-	color: #000000; }
-	.button.button-gold:hover {
-	  color: #000000;
-	  text-decoration: none; }
-	.button.button-gold.active, .button.button-gold.activated {
-	  background-color:#c0a062; }
-	.button.button-gold.button-clear {
-	  border-color: transparent;
-	  background: none;
-	  box-shadow: none;
-	  color: #625031; }
-	.button.button-gold.button-icon {
-
-	  border-color: transparent;
-	  background: none; }
-	.button.button-gold.button-outline {
-	  border-color: #625031;
-	  background: transparent;
-	  color: #625031; }
-	 .button.button-gold.button-outline.active, .button.button-gold.button-outline.activated {
-		background-color: #625031;
-		box-shadow: none;
-		color: #000000; }
