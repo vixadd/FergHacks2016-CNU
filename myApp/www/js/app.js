@@ -68,8 +68,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         controller:'TicketCtrl'
       }
     }
-  }
-  
+  })
 
   .state('app.password', {
       url: '/password',
