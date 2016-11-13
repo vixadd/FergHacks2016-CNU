@@ -1,7 +1,7 @@
 angular.module('rapunzel.services', [])
 
     .factory('tickets',  ['$http', function($http) {
-        return $http.get('https://s3.amazonaws.com/codecademy-content/courses/ltp4/forecast-api/forecast.json')
+      return $http.get('https://private-3b6cf-ferghacks16.apiary-mock.com/tickets')
         .success(function(data) {
             return data;
         })
