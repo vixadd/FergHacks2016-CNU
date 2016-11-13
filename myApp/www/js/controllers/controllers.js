@@ -60,13 +60,14 @@ angular.module('starter.controllers', ['rapunzel.services'])
   })
   }])
 
-<<<<<<< HEAD
   .controller('TicketCtrl', function($scope, $stateParams) {})
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {});
-=======
-.controller('PlaylistCtrl', function($scope, $stateParams) {
-})
+  .controller('PlaylistCtrl', function($scope, $stateParams) {})
+
+
+  .controller('PlaylistCtrl', function($scope, $stateParams) {
+
+  })
 
 
 // Define a controller to use the promised service
@@ -111,4 +112,3 @@ angular.module('starter.controllers', ['rapunzel.services'])
     };
 
   });
->>>>>>> a2eb3344109918329abb6ce040fbcecf82235133
