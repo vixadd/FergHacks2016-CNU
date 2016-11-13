@@ -58,7 +58,8 @@ angular.module('starter.controllers', ['rapunzel.services'])
   tickets.success(function(data) {
     $scope.tickets = data;
   })
-}])
+  }])
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
-});
+  .controller('TicketCtrl', function($scope, $stateParams) {})
+
+.controller('PlaylistCtrl', function($scope, $stateParams) {});
