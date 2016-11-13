@@ -1,7 +1,17 @@
 .color-menubar{
   background: #33cd5f !important
 }
-
+.scroll-content{
+	background-color: #2f2f2f;
+}
+/*.item-complex .item-content{
+	color: #ffffff;
+}*/
+.item-complex .item-content
+{
+	color: #ffffff;
+	background-color: #2f2f2f;
+}
 .button.button-custom {
 	border-color: transparent;
 	background-color: transparent;
@@ -21,7 +31,9 @@
 	    		 background-color: #33cd4e; 
 	    		 /*This color is slightly off of our green*/
 	    }
-
+.button.button-custom{
+	color:white;
+}
 .center {
 	align-content: center;
 }
