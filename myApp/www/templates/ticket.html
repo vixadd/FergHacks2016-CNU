@@ -1,0 +1,36 @@
+<ion-view view-title="Ticket #"> {{ ticket.id }}
+	<ion-content>
+	<h4>
+	    <div class="row">
+	    	<div class="col-67">
+	    		<span class="input-label">Name:</span>
+	    		{{ ticket.id }}
+	    	</div>
+	    	<div class="col-33">
+	    		<span class="input-label">Date:</span>
+	    		11/12/2016
+	    		<!-- {{tickets.ticket.Ticket Issue Date}} -->
+	    	</div>
+	    </div>
+	    <p>
+	    <div class="row">
+	    	<div class="col-33">
+	    		<span class="input-label">Issue:</span>
+	    		Leaky leak
+	    	</div>
+
+	    	<form id="nav-form" ng-controller="NavCtrl">
+		    	<div class="col">
+		    		<span class="input-label">Location:</span> 
+		    		1610 Coliseum Dr, Hampton, VA 23666
+		    	</div>
+		    	<div class="col-20">
+		    		<button class="button button-positive button-small center icon-custom ion-map" ng-click=navigate()>
+			    		<h4><font color="white">Navigate</font></h4>
+			    	</button>
+		    	</div>
+	    	</form>
+	    </div>
+    </h4>
+	</ion-content>
+</ion-view>
