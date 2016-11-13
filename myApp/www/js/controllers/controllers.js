@@ -1,5 +1,11 @@
 angular.module('starter.controllers', ['rapunzel.services'])
 
+.controller('loginSpoofCtrl', function($state, $scope) {
+  $scope.goHome = function(){
+  $state.go('app.home');
+}
+})
+
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
 
   // With the new view caching in Ionic, Controllers are only called
@@ -37,7 +43,9 @@ angular.module('starter.controllers', ['rapunzel.services'])
     // code if using a login system
     $timeout(function() {
       $scope.closeLogin();
+
     }, 1000);
+
   };
 })
 
