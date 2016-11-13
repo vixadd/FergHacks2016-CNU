@@ -54,7 +54,7 @@ angular.module('rapunzel.messenger', ['ionic'])
     var d = new Date();
   d = d.toLocaleTimeString().replace(/:\d+ /, ' ');
 
-    $scope.messages.push({
+      $scope.messages.push({
       userId: alternate ? '12345' : '54321',
       text: $scope.data.message,
       time: d
