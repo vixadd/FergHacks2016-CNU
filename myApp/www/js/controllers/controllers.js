@@ -3,7 +3,7 @@ angular.module('starter.controllers', ['rapunzel.services'])
 .controller('loginSpoofCtrl', function($state, $scope) {
   $scope.goHome = function(){
   $state.go('app.home');
-}
+  }
 })
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
@@ -69,17 +69,22 @@ angular.module('starter.controllers', ['rapunzel.services'])
     });
   }])
 
-  .controller('TicketCtrl', ['$scope', 'sharedProperties', '$stateParams', function($scope, shared, $stateParams) {
+  .controller('TicketCtrl', ['$state', '$scope', 'sharedProperties', '$stateParams',
+                             function($state, $scope, shared, $stateParams) {
     var obj = shared.getProperty();
     for (var i = 0; i < obj.length; i++) {
       if (obj[i].id == $stateParams.ticketId) $scope.ticket = obj[i];
     }
+
+    $scope.goBack = function() {
+      $state.go('app.tickets');
+    }
+
+    $scope.goMessage = function() {
+      $state.go('app.messenging');
+    }
+
   }])
-
-  .controller('PlaylistCtrl', function($scope, $stateParams) {
-
-  })
-
 
 // Define a controller to use the promised service
   .controller('NavCtrl', function ($scope, $cordovaLaunchNavigator) {
