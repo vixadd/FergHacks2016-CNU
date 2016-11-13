@@ -63,7 +63,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     url:'/tickets',
     views: {
       'menuContent': {
-        templateUrl:'template/tickets.html',
+        templateUrl:'templates/tickets.html',
         controller: 'TicketsCtrl'
       }
     }
@@ -116,5 +116,5 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/login');
+  $urlRouterProvider.otherwise('/app/tickets');
 });
