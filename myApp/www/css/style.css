@@ -2,6 +2,39 @@
   background: #33cd5f !important
 }
 
+.scroll-content{
+	background-color: #2f2f2f;
+}
+
+.input-label{
+	color:white;
+}
+
+.item-complex .item-content
+{
+	color: #ffffff;
+	background-color: #2f2f2f;
+}
+
+input[type="text"], input[type="password"]{
+	color:white;
+}
+
+.item{
+	background-color: #2f2f2f;
+}
+
+/* text field labels and nav bar text */
+body, .ionic-body {
+	color: white;
+}
+
+/* headers - used particularly in ticket.html */
+h1, h2, h3, h4, h5, h6 {
+	color: white;
+}
+
+/* used for side-menu-bar color (hamburger button) */
 .button.button-custom {
 	border-color: transparent;
 	background-color: transparent;
@@ -21,14 +54,19 @@
 	    		 background-color: #33cd4e; 
 	    		 /*This color is slightly off of our green*/
 	    }
-
-.center {
-	align-content: center;
+	    .button.button-block{
+	    	color:white;
+	    }
+.button.button-custom{
+	color:white;
 }
 
+/* used in ticket.html for the navigate button */
 .button.icon-custom.ion-map {
 	font-size: 30px;
 	padding-top: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
 	border-color: transparent;
 }
 
