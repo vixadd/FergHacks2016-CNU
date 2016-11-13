@@ -7,9 +7,18 @@
 /*.item-complex .item-content{
 	color: #ffffff;
 }*/
+.input-label{
+	color:white;
+}
 .item-complex .item-content
 {
 	color: #ffffff;
+	background-color: #2f2f2f;
+}
+input[type="text"], input[type="password"]{
+	color:white;
+}
+.item{
 	background-color: #2f2f2f;
 }
 .button.button-custom {
@@ -31,6 +40,9 @@
 	    		 background-color: #33cd4e; 
 	    		 /*This color is slightly off of our green*/
 	    }
+	    .button.button-block{
+	    	color:white;
+	    }
 .button.button-custom{
 	color:white;
 }
@@ -41,7 +53,7 @@
 .button.icon-custom.ion-map {
 	font-size: 30px;
 	padding-top: 5px;
-	border-color: transparent;
+	border-color: black;
 }
 
 /* UNUSED, for reference only */

@@ -6,27 +6,41 @@
     </div>
   </ion-header-bar>
   <ion-content>
+  <center>
+    <img src="https://cdn.discordapp.com/attachments/246756278699950082/247127958018457600/Rapunzel_logo.gif" width="250" height="250">
+    </center>
     <form ng-submit="doLogin()">
-      <div class="list">
+    <div class="list list-inset">
+  <label class="item item-input">
+    <input type="text" placeholder="Username">
+  </label>
+  <label class="item item-input">
+    <input type="Password" placeholder="Password">
+  </label>
+   <label class="item">
+          <button class="button button-block button-balanced" type="submit">Log in</button>
+        </label>
+</div>
+      <!-- <div class="list">
         <label class="item item-input">
-          <span class="input-label">Username</span>
-          <input type="text" ng-model="loginData.username">
+          
+          <input type="text" placeholder = "Username" ng-model="loginData.username">
         </label>
         <label class="item item-input">
-          <span class="input-label">Password</span>
-          <input type="password" ng-model="loginData.password">
-        </label>
-        <label class="item">
-          <button class="button button-block button-positive" type="submit">Log in</button>
+          
+          <input type="Password" placeholder = "Password" ng-model="loginData.passwor">
+        </label> -->
+        <!-- <label class="item">
+          <button class="button button-block button-balanced" type="submit">Log in</button>
         </label>
         <center>
-        <ion-item menu-close href="#/app/password" ng-click="closeLogin()">
+        <button class="button button-clear button-balanced">
           Forgot Password
 
-        </ion-item>
+        </button>
         <ion-item menu-close href="#/app/register" ng-click="closeLogin()">
           Register
-        </ion-item>
+        </ion-item> -->
         <!-- <img src="http://images4.fanpop.com/image/polls/819000/819325_1314721569230_full.jpg?v=1314721592" height="200" width="500"> -->
         </center>
       </div>
